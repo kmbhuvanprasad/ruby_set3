@@ -1,5 +1,29 @@
-1) How one can determine whether a given array is empty or not?
+#1) How one can determine whether a given array is empty or not?
 
-2) Print 15 times the string "Qwinix".
+#2) Print 15 times the string "Qwinix".
 
-3) Write a ruby program inorder to determine whether the given number is odd or even.
+#3) Write a ruby program inorder to determine whether the given number is odd or even.
+
+a=[]
+puts a.empty?
+b=[1,3,5,7]
+puts b.empty?
+
+
+x="qwinix"
+15.times do
+puts x
+end
+
+class Number
+	def evenodd(num)
+		if num%2 == 0
+			puts "Even Number"
+		else
+			puts "Odd Number"
+		end
+	end
+end
+num=gets.to_i
+number=Number.new
+number.evenodd(num)
